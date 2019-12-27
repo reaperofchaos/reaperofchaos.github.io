@@ -1,0 +1,484 @@
+@import url('http://getbootstrap.com/2.3.2/assets/css/bootstrap.css');
+		.tab-pane{
+		 background-color: #FFFFFF; 
+		 border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 height: auto;
+		 padding-top: 40px;
+		 padding-bottom: 20px;
+		 padding-left: 20px;
+		 padding-right: 20px;
+		 }
+		 #noter {
+		 background-color: #a9b78f; 
+		 border:0px;
+		 }
+		 body {
+		 background-color: #a9b78f;
+         color: #000000;
+		 font-family:Book Antiqua;
+		 animation: chatscriptBackground 6s ease-in-out infinite;
+         }
+		 div {
+		 font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+		 }
+		.borderless td, .borderless th {
+		border: none !important;
+		}
+		#problemToolbar, #problemExamplesToolbar{
+		  background-color: #afc6c6; 
+		 color:#000000; 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 margin: auto;
+		 width: auto;
+		 height: auto;
+		}
+		#problemToolbarLabel, #problemExamplesToolbarLabel{
+		  background-color: #39547f; 
+		 color:#FFFFFF; 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 margin: auto;
+		 width: auto;
+		 height: auto;
+		}
+		#problemToolbarLabel button, #problemExamplesToolbar button{
+		 color:#000000; 
+		}
+		#ProblemSearchBoxes, #problemExamplesSearchBoxes{
+	     background-color: #afc6c6; 
+		 color:#000000; 
+		 margin: auto;
+		width: auto;
+		 //max-width: 650px;
+		 height: auto;
+		}
+		 #KI {
+		 background-color: #c0c1bd;
+         color: #000000;
+		 border:3px; 
+		 border-style: solid;
+		 border-color: #000000
+		 }
+		  button.kiBtn {
+		 background-color: #39547f; 
+		 color:#FFFFFF; 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 //max-width: 650px;
+		//width: auto;
+		 height: auto;
+		 }
+		 div#form{
+		 font-family:Book Antiqua;
+		 }
+		  #form {
+		 background-color: #c0c1bd; 
+		 margin-left: auto;
+		 margin-right: auto;
+		 color:#000000;		 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 height: auto;
+		 padding-bottom: 20px;
+		 padding-left: 20px;
+		 }
+		 #formContainer {
+		 background-color: #c0c1bd; 
+		 font-family:Book Antiqua;
+		 margin-left: auto;
+		 margin-right: auto;
+		 color:#000000;		 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 height: auto;
+		 padding-bottom: 20px;
+		 }
+		  div#formContainer h1 {
+		 background-color: #d6a022;
+		 font-family:Book Antiqua;		 
+		 color:#000000; 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 height: 400px;
+		 }
+		
+		 #formCreate{
+		 margin-left: auto;
+         margin-right: auto;
+		 background-color: #39547f; 
+		 font-weight: bold;
+		 font-family:Palatino Linotype;
+		 color:#FFFFFF; 
+         border:3px; 
+		 height: 50px;
+		//width: 80px;
+		 border-style: solid;
+		 border-color: #000000;
+		 border-radius: 25px;
+		 }
+		 div#chatSelector {
+		 vertical-align: bottom;
+		 background: linear-gradient(to bottom right, #cd7f32, orange);
+		 font-weight: bold;
+		 color:#000000; 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		  //max-width: 650px;
+		 }
+		 @keyframes chatscriptBackground { 
+			0%{background-position:10% 0%}
+			50%{background-position:91% 100%}
+			100%{background-position:10% 0%}
+		}
+		 div#buttons {
+		 background: linear-gradient(silver, gray); 
+		 background-size: 200% 200%;
+		 color:#000000; 
+		 font-family:Book Antiqua;
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 //max-width: 650px;
+		 height: 330px;
+		 vertical-align: top;
+		 animation: chatscriptBackground 6s ease-in-out infinite;
+		 }
+
+		 div#buttons button{
+		  margin-left: auto;
+         margin-right: auto;
+		 background: linear-gradient(#72c1f9, lightblue);  
+		 font-weight: bold;
+		 font-family:Palatino Linotype;
+		 color:#FFFFFF; 
+		 box-shadow: 0 9px #999;
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 border-radius: 25px;
+		  height: 65px;
+		 animation: chatscriptBackground 6s ease-in-out infinite;
+		 }
+		 div#buttons button:active{
+		 background-color: #39547f; 
+		 font-weight: bold;
+		 font-family:Palatino Linotype;
+		 color:#FFFFFF; 
+		 box-shadow: 0 5px #666;
+		 transform: translateY(4px);
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 border-radius: 25px;
+		 height: 65px;
+        //width: 125px; 
+		 }
+		 .templateName{
+		 background-color: #FFFFFF; 
+		 font-family:Book Antiqua;
+		 color:#000000; 
+		 text-align: center;
+		 margin-left: auto;
+         margin-right: auto;
+		  font-weight: bold;
+		//width: 300px;
+		 }
+		 
+		 #noteSelector {
+		 background: linear-gradient(silver, gray); 
+		 font-weight: bold;
+		 font-family:Book Antiqua;
+         color: #000000;
+		 border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 border-radius: 25px;
+		  //max-width: 650px;
+		 }
+		 
+		.container {
+			margin-top: 10px;
+		}
+		.nav-tabs{
+			border-bottom: 3px solid #000000;
+		 }
+		.nav-tabs > li {
+			position:relative;    
+			
+		}
+		.nav-tabs li {
+
+		}
+		
+		.nav-tabs > li > a {
+			display:inline-block;
+			background-color: #72c1f9 !important;
+			border: 3px;
+			border-style: solid;
+			border-color: #000000;
+			color:#fff !important;
+		}
+		.nav-tabs > li.active > a{
+			background-color: #39547f !important;
+			border: 3px;
+			border-style: solid;
+			border-color: #000000 !important;
+			color:#000000;
+		}
+		.nav-tabs > li > span {
+			display:none;
+			cursor:pointer;
+			position:absolute;
+			right: 6px;
+			top: 8px;
+			color: red;
+		}
+
+		.nav-tabs > li:hover > span {
+			display: inline-block;
+		}
+		 .search {
+		 background: linear-gradient(to bottom right, #cd7f32, orange);
+		 border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 height: auto;
+		 padding-left: 20px;
+		 padding-right: 20px;
+		 padding-bottom: 20px;
+		 }
+		 .search label{
+		 font-size: 16;
+		 text-decoration: underline;
+		 font-weight: bold;
+		 font-family: Arial;
+         color: #000000;
+		 padding: 10px;
+		 text-align: center;
+		 }
+		  .ui-autocomplete-input {
+		 font-size: 12;
+		 font-weight: bold;
+         color: #000000;
+		 display: block;
+		 margin-left: auto;
+		 margin-right: auto;
+		 }
+		 .result{
+		 background-color: #FFFFFF; 
+		 border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 padding-top: 20px;
+		 padding-right: 20px;
+		 padding-left: 20px;
+		 //max-width: 600px;
+		//width: auto;
+		 height: auto;
+		 }
+		 #problem p, #domoProblem p, #imaFlows p{
+		 padding-right: 20px;
+		 padding-left: 20px;
+		 }
+		 #problem label, #domoProblem label, #imaFlows label{
+		 padding-top: 20px;
+		 padding-right: 20px;
+		 padding-left: 20px;
+		 }
+		 #noteDiv{
+		 min-width: 500px;
+		 min-height: 200px;
+		 //max-width: 650px;
+		//width: auto;
+		 height: auto;
+		 }
+		.buttonDiv {
+			background-color: #afc6c6;
+			padding-left: 50px;
+
+		 }
+		 .subGroupB {
+			background-color: #c0c1bd;
+			padding-left: 50px;
+
+		 }
+		  .subGroupA {
+			background-color: #c1d8ff;
+			padding-left: 50px;
+
+		 }
+		 .buttonGroup {
+			background-color: #d6a022;
+			padding-left: 50px;
+		 }
+		.level1Buttons{
+		 //background: linear-gradient(to bottom right, #cd7f32, orange);
+		 background-color: #d6a022; 
+		 color:#000000; 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 margin: auto;
+		 height: auto;
+		 }
+		 
+		  div.level1Buttons button, div.level1Buttons input[type=button] {
+		 background-color: #39547f; 
+		 font-weight: bold;
+		 color:#FFFFFF; 
+         border:1px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 border-radius: 25px;
+		 height: auto;
+		//width: auto;
+		 min-height: 30px;
+		 min-width: 65px;
+		 }
+		 .level2Buttons{
+		 background-color: #afc6c6; 
+		 color:#000000; 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 margin: auto;
+		//width: auto;
+		 //max-width: 650px;
+		 height: auto;
+		 }
+		  div.level2Buttons button, div.level2Buttons input[type=button]{
+		 background-color: #d6a022; 
+		 font-weight: bold;
+		 color:#FFFFFF; 
+         border:1px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 }
+		 
+		#level3Buttons {
+		background-color: #c0c1bd; 
+		 font-weight: bold;
+		 color:#FFFFFF; 
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 margin: auto;
+		//width: auto;
+		 //max-width: 650px;
+		 height: auto;
+		}
+		 #level3Buttons button {
+		 background-color: #39547f; 
+		 font-weight: bold;
+		 color:#FFFFFF; 
+         border:1px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 }
+		 div#note_buttons button.level1{
+		 background: linear-gradient(130deg, #ff7e00, #ffffff, #5cff00);
+		 font-weight: bold;
+		 font-family:Palatino Linotype;
+		 color:#FFFFFF; 
+		 box-shadow: 0 9px #999;
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 border-radius: 25px;
+		 height: 40px;
+        //width: 125px; 
+		 }
+		 div#note_buttons button.level1:active{
+		 background-color: #39547f; 
+		 font-weight: bold;
+		 font-family:Palatino Linotype;
+		 color:#FFFFFF; 
+		 box-shadow: 0 5px #666;
+		 transform: translateY(4px);
+         border:3px; 
+		 border-style: solid;
+		 border-color: #000000;
+		 border-radius: 25px;
+		 height: 40px;
+        //width: 125px; 
+		 }
+		 .top-buffer { margin-top:20px; }
+         .button {
+         background-color: #c1d8ff;
+         color: black;
+         border-radius: 25px;
+        //width: 125px; 
+         }
+         a:link {
+         color: #000099;
+         }
+         a:visited {
+         color: #000099;
+         text-decoration: underline;
+         }
+         a:hover {
+         color: #ff6600;
+         text-decoration: underline;
+         font-style: heavy;
+         }
+         a:active {
+         color: #ff6600;
+         }
+		.Preview {
+         background-color:white; 
+         color:#0B1E6C; 
+		 font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+         border:3px;
+		 border-style: solid;
+		 border-color: #000000;
+		 margin-left: auto;
+         margin-right: auto;
+          //max-width: 650px; 
+		 //width: auto;
+		 height: auto;
+         overflow:auto;
+         }
+		 .screenshot{
+		text-decoration: underline;
+		}
+		#NPANXXResults {
+	     font-family:Book Antiqua;
+         background-color:white; 
+         color:#0B1E6C; 
+         border:3px;
+         width: 300px; 
+         height: 50px; 
+         overflow:auto;
+         }
+		 .nav-tabs a {
+		color: white; 
+		}
+		.level1 button{
+		  background-color: #c1d8ff;
+         color: black;
+         
+		 } 
+		 .level2 button {
+		  background-color: #c1d8ff;
+         color: black;
+         width: 125px; 
+		 } 
+		 .tablinks button{
+		  background-color: #c1d8ff;
+         color: black;
+         width: 125px; 
+		 }
+		
+		
+		 
+		

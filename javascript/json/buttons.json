@@ -1,0 +1,108 @@
+﻿	/**
+	 * @Name: Buttons.json
+	 * @Description: Datasource for buttons used by NoterCategory.class.js
+	 * and NoterSelector.class.js
+	 * @Parameters: groupName - Name of the radio button label in div id  noterSelector 
+	 * 				subGroup- Name of the button value in div id  level1Buttons
+	 * 				subGroup2- Name of the button value in div id  level2Buttons
+	 * 			    type - checks if the noterCategory is a radio button, or searchBox
+	 *              buttons - takes an array of button objects defined in button.Class
+	 *                   name - name of the element
+	 *                   action - the javascript function called. Any function or method defined in a linked .js. file
+	 *                            can be used, but these are the more common ones used.
+	 *                   	      NoterCategory.getLevel2Buttons(subGroupName) -
+	 *                               gets all buttons in buttons array where subGroup = subGroupName and subGroup2 = ""
+	 *                   	      NoterCategory.getLevel3Buttons(subGroupName, subGroupName2) -
+	 *                               gets all buttons in buttons array where subGroup = subGroupName and subGroup2 = subGroupName2
+	 *                           Copyit() - creates a Copy Button from CopyButton class. When the button is 
+	 *                                      pushed the response is copied to the clipboard
+	 *                         Newform.buildForm(\"myForm\") - button creates a bootstrap tab using the 
+	 *                             NewForm object named myForm stored in forms.json. 
+	 *                         Table.create_table(myArray) - creates a bootstrap tab using array of table objectsj 
+	 *               				defined using Table.class.js
+	 *                         createTab() - creates a bootstrap from the response
+	 *                         MiscTools.popitup(website) - creates a new browser window with the website
+	 *                    classType - name of html class
+	 *                    value - text displayed on the button
+	 *                    response - text used to build a tab or to be copied to the clipboard  
+	 * @Author:  Jacob Conner
+	 */
+	 var buttons = [{
+		"groupName": "Notes",
+		"subGroup": "",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "l1Example1",
+				"action": "NoterCategory.getLevel2Buttons(&quot;l1Example1&quot;)",
+				"classType": "tablinks",
+				"value": "Level 1 Example 1",
+				"response": ""
+			},
+			{
+				"name": "l1Example2",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Level 1 Copy Button Example",
+				"response": "This level 1 button copies text defined in the Response field to the clipboard"
+			}
+		]
+	},
+	{
+		"groupName": "Notes",
+		"subGroup": "l1Example1",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "l2Example1",
+				"action": "NoterCategory.getLevel3Buttons(\"l1Example1\", \"l2Example1\")",
+				"classType": "tablinks",
+				"value": "l2Example1",
+				"response": ""
+			},
+			{
+				"name": "l2Example2",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Level 2 Copy Button Example",
+				"response": "This level 2 button copies text defined in the Response field to the clipboard"
+				},
+		]
+	},
+	{
+		"groupName": "Notes",
+		"subGroup": "l1Example1",
+		"subGroup2": "l2Example1",
+		"type": "radioButton",
+		"buttons": [{
+			"name": "l3Example1",
+			"action": "copyit()",
+			"classType": "copy",
+			"value": "Level 3 Copy Button Example",
+			"response": "This button copies text defined in the Response field to the clipboard"
+			}
+		]
+	},
+	{
+		"groupName": "Tools",
+		"subGroup": "",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [
+			{
+				"name": "removews",
+				"action": "NewForm.buildForm(\"removeWhiteSpaceForm\", \"Tools\")",
+				"classType": "tablinks",
+				"value": "Remove White Space",
+				"response": ""
+			},
+			{
+				"name": "macAddressLookup",
+				"action": "macAddressLookup.buildForm()",
+				"classType": "tablinks",
+				"value": "MAC Address Lookup",
+				"response": ""
+			}
+		]
+	}
+]

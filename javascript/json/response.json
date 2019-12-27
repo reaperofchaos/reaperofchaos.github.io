@@ -1,0 +1,130 @@
+﻿/**
+	 * @Name: Response.json
+	 * @Description: Datasource for ChatScript objects defined in ChatScripts.class.js
+	 * @Parameters: groupName - Group of copyIt Buttons - used to make an option 
+	 *                          for the chatOptionsBox select box
+	 * 				subGroup - SubGroup of copyIt Buttons - used to make an option 
+	 *                          for the chatSubOptionsBox select box
+	 * 				buttons - array of copyit buttons defined under CopyButton.class.js
+	 * 				          name - name of the element
+	 *                        action - copyIt() - always copyIt
+	 *                        classType - html class - always copy ( needed for copyIt function)
+	 *              value - text displayed on the button
+	 *              response - text that is copied to the clipboard when a button is pushed. 
+	 * @Author:  Jacob Conner
+	 */
+
+var response = [{
+		"groupName": "General",
+		"subGroup": "",
+		"buttons": [{
+				"name": "hello",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Hello",
+				"response": "Hello, how can I help you today?"
+			},
+			{
+				"name": "research",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "1 - 3 Min Research",
+				"response": "Please allow me one to three minutes to research this issue."
+			},
+			{
+				"name": "completingRequest",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "1 - 3 Min Complete",
+				"response": "Please allow me one to three minutes while I complete your request."
+			},
+			{
+				"name": "stillWorking",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Still Addressing",
+				"response": "Thank you for your patience. I am currently addressing your concern. "
+			},
+			{
+				"name": "stillResearching",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Still Researching",
+				"response": "Thank you for your patience. I am still researching your request."
+			},
+			{
+				"name": "idleWarning",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Idle Warning",
+				"response": "I see you have been idle for more than one minute, is there anything else I can help you with?"
+			},
+			{
+				"name": "idleDisconnect",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Idle Disconnect",
+				"response": "We are always happy to help. Since you have been idle for more than two minutes I am disconnecting the chat. If there is anything else we can do for you, please initiate a new chat."
+			},
+			{
+				"name": "close",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Close",
+				"response": "Thank you for allowing us to assist you!  Have a great day!"
+			}
+		]
+	},
+	{
+		"groupName": "General",
+		"subGroup": "Japanese",
+		"buttons": [{
+			"name": "konnichiwa",
+			"action": "copyit()",
+			"classType": "copy",
+			"value": "Konnichiwa",
+			"response": "Konnichiwa!"
+		},
+		{
+			"name": "sayonara",
+			"action": "copyit()",
+			"classType": "copy",
+			"value": "Sayonara",
+			"response": "Sayonara"
+		}
+		]
+	},
+	{
+		"groupName": "AdvertisingSlogans",
+		"subGroup": "",
+		"buttons": [{
+				"name": "eightOutOfTenCats",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Eight Out of Ten Cats",
+				"response": "Eight out of ten cats prefer Whiskas"
+			},
+			{
+				"name": "Arbys",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Arbys",
+				"response": "We have the meats!"
+			},
+			{
+				"name": "Subway",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Subway",
+				"response": "Subway Eat Fresh"
+			},
+			{
+				"name": "redRobin",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Red Robin",
+				"response": "Red Robin Yum!"
+			}
+		]
+	}
+];

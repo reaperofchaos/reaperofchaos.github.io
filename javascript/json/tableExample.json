@@ -1,0 +1,24 @@
+  /**
+	 * @Name: exampleTable.json
+	 * @Description: Datasource for a table object defined by Table.class.js
+	 *               Called in buttons.json using Table.create_table(tableExample)
+	 * @Parameters: name - the name of the table
+	 *              rows - array of property_names - column 1 
+	 *                     and property_values - column2	 * @Author:  Jacob Conner
+	 */
+var tableExample = {
+	"name": "Example Table",
+	"rows": [{
+			"property_name": "Row 1",
+			"property_value": "Sample Data for Row 1"
+		},
+		{
+			"property_name": "Row 2",
+			"property_value": "Sample Data for Row 2"
+		},
+		{
+			"property_name": "Row 3",
+			"property_value": "Sample Data for Row 3"
+		}
+	]
+};
