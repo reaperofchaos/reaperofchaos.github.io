@@ -112,9 +112,8 @@ class ChatScripts {
 	static getChatScripts(){
 		var chatType = document.getElementById('chatOptionsBox');
 		var chatTypeOption = chatType.options[chatType.selectedIndex].value;
-		chatTypeOption == ''
-			? ChatScripts.getChatButtons() //search for chat buttons
-			: ChatScripts.changeChatOptions(); //search for subChat options
+		ChatScripts.getChatButtons(); //search for chat buttons
+		ChatScripts.changeChatOptions(); //search for subChatOptions
 	}
 	 getUniqueChatTypes(){
 		var lookup = {};
