@@ -89,7 +89,7 @@ class ChatScripts {
 		document.getElementById('chatSubOptions').innerHTML != null
 			? subChatType = document.getElementById('chatSubOptionsBox')
 			: subChatType = null;
-		subChatType != ''
+		subChatType != null
 			? subChatOption = subChatType.options[subChatType.selectedIndex].value
 			: subChatOption = '';
 		return subChatOption;
