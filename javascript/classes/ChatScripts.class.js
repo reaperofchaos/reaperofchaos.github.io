@@ -41,6 +41,7 @@ class ChatScripts {
 		var id = 'frm1';
 		var classType = 'level1';
 	document.getElementById("chatScripts").innerHTML = html;
+	console.log(this.chatTypes[0]);
 	//display the first chatTypeOption
 	ChatScripts.getChatButtonNames(this.chatTypes[0], '')
 	}
