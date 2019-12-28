@@ -71,7 +71,7 @@ class ChatScripts {
 		html += ChatScripts.getAllAvailableSubChatOptions(chatTypeOption);
 		document.getElementById('chatSubOptions').innerHTML = html;
 	}	
-	static getChatButtonNames(chatTypeOption, subChatOption){
+	static getChatButtonNames(chatTypeOption, subChatOption = ''){
 			const isChatButton = response => response.groupName == chatTypeOption && response.subGroup == subChatOption;
 			var buttons; 
 			var chatButtonArray = response.filter(isChatButton)
@@ -94,15 +94,20 @@ class ChatScripts {
 			: subChatOption = '';
 		return subChatOption;
 	}
+	//Creates copy buttons - called when chatOptionsBox or subChatOption dropdowns change. 
 	static getChatButtons(){
+		//get the chatOption Value
 		var chatType = document.getElementById('chatOptionsBox');
 		var chatTypeOption = chatType.options[chatType.selectedIndex].value;
+		//get the subChatOption value
 		var subChatOption = ChatScripts.checkIfSubChatBox(chatTypeOption);
+		//Create a list of chat buttons. 
 		var chatButtonsList = ChatScripts.getChatButtonNames(chatTypeOption, subChatOption);
 		var cols = 3;
 		var id = 'frm1';
 		var classType = 'level1';
 		var chatButtons = new ButtonGroup(chatButtonsList, cols, id, classType);
+		//create copy buttons and palce them in the buttons div
 		var html = chatButtons.create('copy');
 		document.getElementById('buttons').innerHTML = html;
 	}
