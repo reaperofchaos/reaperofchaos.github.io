@@ -78,14 +78,12 @@ class ChatScripts {
 				.map((currentElement)=>{
 					buttons = currentElement.buttons;
 				});
+			console.log(buttons); 
 			return buttons; 
 	}
 	static checkIfSubChatBox(chatTypeOption){
 		var subChatType;
 		var subChatOption;
-		chatTypeOption == ''
-			? document.getElementById('chatSubOptions').innerHTML = ''
-			: null; 
 		document.getElementById('chatSubOptions').innerHTML != null
 			? subChatType = document.getElementById('chatSubOptionsBox')
 			: subChatType = null;
@@ -103,6 +101,7 @@ class ChatScripts {
 		var subChatOption
 			? ChatScripts.checkIfSubChatBox(chatTypeOption)
 			: '';
+		console.log("the subchat option is" + subChatOption); 
 		//Create a list of chat buttons. 
 		var chatButtonsList = ChatScripts.getChatButtonNames(chatTypeOption, subChatOption);
 		var cols = 3;
