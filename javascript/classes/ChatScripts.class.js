@@ -72,7 +72,6 @@ class ChatScripts {
 		document.getElementById('chatSubOptions').innerHTML = html;
 	}	
 	static getChatButtonNames(chatTypeOption, subChatOption){
-			console.log(this.chatTypes[0]);
 			const isChatButton = response => response.groupName == chatTypeOption && response.subGroup == subChatOption;
 			var buttons; 
 			var chatButtonArray = response.filter(isChatButton)
