@@ -25,7 +25,6 @@ class ChatScripts {
 						<td>
 							<label for='chatOptions'>Chat Scripts:  </label>
 							<select name='chatOptions' id='chatOptionsBox' onClick = 'ChatScripts.getChatScripts()'>`;
-	console.log(this.chatTypes);
 	var groupNames = this.chatTypes.map((currentElement)=>{
 								html += `<option name='${currentElement}'>${currentElement}</option>`;
 							});
@@ -41,10 +40,9 @@ class ChatScripts {
 		var cols = 3;
 		var id = 'frm1';
 		var classType = 'level1';
-		//var chatButtons = new ButtonGroup(buttons, cols, id, classType);
-		//var html2 = chatButtons.create('copy');
 	document.getElementById("chatScripts").innerHTML = html;
-	//document.getElementById("buttons").innerHTML = html2;
+	//display the first chatTypeOption
+	this.getChatButtonNames(this.chatTypes[0], '')
 	}
 	
 	static getSubGroupNames(chatOption, currentElement){
