@@ -82,48 +82,69 @@ var response = [{
 			"name": "konnichiwa",
 			"action": "copyit()",
 			"classType": "copy",
-			"value": "Konnichiwa",
+			"value": "Hello",
 			"response": "Konnichiwa!"
 		},
 		{
 			"name": "sayonara",
 			"action": "copyit()",
 			"classType": "copy",
-			"value": "Sayonara",
+			"value": "Goodbye",
 			"response": "Sayonara"
+		},
+		{
+			"name": "ogenki",
+			"action": "copyit()",
+			"classType": "copy",
+			"value": "How are you?",
+			"response": "O genki desu ka"
 		}
 		]
 	},
 	{
-		"groupName": "AdvertisingSlogans",
+		"groupName": "Hello",
 		"subGroup": "",
 		"buttons": [{
-				"name": "eightOutOfTenCats",
+				"name": "portuguese",
 				"action": "copyit()",
 				"classType": "copy",
-				"value": "Eight Out of Ten Cats",
-				"response": "Eight out of ten cats prefer Whiskas"
+				"value": "Portuguese",
+				"response": "Ola"
 			},
 			{
-				"name": "Arbys",
+				"name": "japanese",
 				"action": "copyit()",
 				"classType": "copy",
-				"value": "Arbys",
-				"response": "We have the meats!"
+				"value": "Japanese",
+				"response": "Konnichiwa"
 			},
 			{
-				"name": "Subway",
+				"name": "spanish",
 				"action": "copyit()",
 				"classType": "copy",
-				"value": "Subway",
-				"response": "Subway Eat Fresh"
+				"value": "Spanish",
+				"response": "Hola"
 			},
 			{
-				"name": "redRobin",
+				"name": "french",
 				"action": "copyit()",
 				"classType": "copy",
-				"value": "Red Robin",
-				"response": "Red Robin Yum!"
+				"value": "French",
+				"response": "Bonjour"
+			},
+			{
+				"name": "mandarin",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Mandarin",
+				"response": "Ni Hao Ma"
+			},
+			{
+				"name": "korean",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Korean",
+				"response": "Anyong Haseyo"
 			}
 		]
 	}
