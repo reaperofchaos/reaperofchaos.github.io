@@ -100,7 +100,9 @@ class ChatScripts {
 		var chatType = document.getElementById('chatOptionsBox');
 		var chatTypeOption = chatType.options[chatType.selectedIndex].value;
 		//get the subChatOption value
-		var subChatOption = ChatScripts.checkIfSubChatBox(chatTypeOption);
+		var subChatOption
+			? ChatScripts.checkIfSubChatBox(chatTypeOption)
+			: '';
 		//Create a list of chat buttons. 
 		var chatButtonsList = ChatScripts.getChatButtonNames(chatTypeOption, subChatOption);
 		var cols = 3;
