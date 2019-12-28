@@ -42,7 +42,7 @@ class ChatScripts {
 		var classType = 'level1';
 	document.getElementById("chatScripts").innerHTML = html;
 	//display the first chatTypeOption
-	this.getChatButtonNames(this.chatTypes[0], '')
+	ChatScripts.getChatButtonNames(this.chatTypes[0], '')
 	}
 	
 	static getSubGroupNames(chatOption, currentElement){
