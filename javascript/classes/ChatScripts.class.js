@@ -41,9 +41,8 @@ class ChatScripts {
 		var id = 'frm1';
 		var classType = 'level1';
 	document.getElementById("chatScripts").innerHTML = html;
-	console.log(this.chatTypes[0]);
 	//display the first chatTypeOption
-	ChatScripts.getChatButtonNames(this.chatTypes[0], '')
+	ChatScripts.getChatButtons();
 	}
 	
 	static getSubGroupNames(chatOption, currentElement){
@@ -73,6 +72,7 @@ class ChatScripts {
 		document.getElementById('chatSubOptions').innerHTML = html;
 	}	
 	static getChatButtonNames(chatTypeOption, subChatOption){
+			console.log(this.chatTypes[0]);
 			const isChatButton = response => response.groupName == chatTypeOption && response.subGroup == subChatOption;
 			var buttons; 
 			var chatButtonArray = response.filter(isChatButton)
