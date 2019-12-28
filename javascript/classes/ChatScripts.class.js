@@ -106,7 +106,7 @@ class ChatScripts {
 		console.log("the subchat option is" + subChatOption); 
 		//Create a list of chat buttons. 
 		var chatButtonsList = ChatScripts.getChatButtonNames(chatTypeOption, subChatOption);
-		console.log(`The getChatButtons chatButtonsList buttons are `);
+		console.log('The getChatButtons chatButtonsList buttons are ');
 		console.log(chatButtonsList); 
 		var cols = 3;
 		var id = 'frm1';
