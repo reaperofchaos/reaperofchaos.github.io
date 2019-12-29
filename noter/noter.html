@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Noter</title>
+		<!-- External Libraries -->
+		<script src="javascript/jquery-3.3.1.slim.min.js"></script>
+		<script src="javascript/popper.min.js"></script>
+		<script src="javascript/bootstrap.js"></script>
+		<!--Javascript Classes -->
+		<script type="text/javascript" src="javascript/classes/Button.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/ButtonGroup.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/ChatScripts.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/CopyButton.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/Email.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/Flow.class.js"></script>
+		<script type="text/javascript" src="javascript/formVariables.js"></script>
+		<script type="text/javascript" src="javascript/classes/Gallery.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/Image.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/NewForm.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/NoterCategory.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/NoteSelector.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/SearchBox.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/startNoter.js"></script>
+		<script type="text/javascript" src="javascript/classes/TabButton.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/Table.class.js"></script>
+		<!--Optional Javascript Classes used for sample functions only -->
+		<script type="text/javascript" src="javascript/classes/SampleEmails.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/macAddressLookup.class.js"></script>
+		<script type="text/javascript" src="javascript/classes/Tools.class.js"></script>
+		<!--JSON Files - Data sources for various functions-->
+		<script type="text/javascript" src="javascript/json/buttons.json"></script>
+		<script type="text/javascript" src="javascript/json/response.json"></script>
+		<script type="text/javascript" src="javascript/json/forms.json"></script>
+		<script type="text/javascript" src="javascript/json/emails.json"></script>
+		<!--JSON Files used for sample Functions -->
+		<script type="text/javascript" src="javascript/json/macAddressLookup.json"></script>
+		<script type="text/javascript" src="javascript/json/tableExample.json"></script>
+		<script type="text/javascript" src="javascript/json/foxGallery.json"></script>
+		<!--CSS Files -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/noter.css">
+	</head>
+	<body>
+		<div>
+			<div class="container-fluid" id='main'>
+				<div class='row'>
+					<ul id='menu' class="nav nav-tabs">
+						<li class="active">
+							<a data-toggle="tab" href="#noter">Noter</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div id="noter" class="tab-pane fade in active">
+						<div class="row">
+							<div class='col-sm-2'></div>
+							<div class='col-sm-8'></div>
+							<div class='col-sm-2'></div>
+						</div>
+						<div class='row top-buffer'>
+							<div class='col-sm-2'></div>
+							<div class='col-sm-8'>
+								<div id='chatScripts'></div>
+							</div>
+							<div class='col-sm-2'></div>
+						</div>
+						<div class='row top-buffer'>
+							<div class='col-sm-2'></div>
+							<div class="col-sm-8">
+								<p id='templateName_1' class='templateName'></p>
+								<p id='Preview' class='Preview' style='display:none'></p>
+								<p id='Preview_1' class='Preview'></p>
+							</div>
+							<div class='col-sm-2'></div>
+						</div>
+						<div class='row top-buffer'>
+							<div class='col-sm-2'></div>
+							<div class='col-sm-8' id='noteSelector'></div>
+							<div class='col-sm-2'></div>
+						</div>
+						<div class='row top-buffer'>
+							<div class='col-sm-2'></div>
+							<div id='noteDiv' class='col-sm-8'>
+								<div id='noteButtons'></div>
+							</div>
+							<div class='col-sm-2'></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script language='javascript'>
+		var myVar;
+		//Tab Functions
+		const nextTab = () =>
+			{
+				var tabs = document.getElementById("menu");
+				var tabTotal = tabs.getElementsByTagName("li").length;
+				return tabTotal + 1; 
+			}
+		const createTab = (tabName, displayName=tabName, value='') =>
+			{ 
+				var tabNo = nextTab();
+				document.getElementById(tabName)
+					? $("#menu").append("")
+					: $("#menu").append("<li class=''><a data-toggle='tab-pane' href=\"#"
+					  + tabName + "\">"+displayName + "</a><span>X</span></li>")
+					  $(".tab-content").append("<div class='tab-pane' id='" 
+					  + tabName + "' name='" + tabNo + "'>" + value +"</div>")
+					  tabName == 'KI' || tabName == 'SPID'
+						? $('#menu a[href=\"#noter\"]').tab('show')
+						: $('#menu a:last').tab('show')
+			};
+		//Copy Functions
+		const setdestination = (location, value) => 
+			{ document.getElementById(location).innerHTML = value }
+			
+		const copyit = (theField, name, destination = 1) =>
+			{				
+				destination != "1"
+					? ( setdestination("Preview", theField),
+						setdestination("Preview_"+destination, theField),
+						setdestination("templateName_"+destination, name))
+					: ( setdestination("Preview", theField),
+						setdestination("Preview_1", theField),
+						setdestination("templateName_1", name))
+			}
+		
+		var copyClass = document.getElementsByClassName("copy");
+		function copyFunction() {
+			var copyTextarea = document.getElementById('Preview');
+			try {
+				copyTextarea = document.createElement("div");
+				var aux = document.createElement("div");
+				aux.setAttribute("contentEditable", true);
+				aux.innerHTML = document.getElementById('Preview').innerHTML;
+				document.body.appendChild(aux);
+				window.getSelection().selectAllChildren(aux);
+				document.execCommand("BackColor", true, 'white');
+				var successful = document.execCommand('copy');
+				var msg = successful ? 'successful' : 'unsuccessful';
+				document.body.removeChild(aux);
+			} catch (err) {
+				console.log('Unable to copy');
+			}
+		}
+	//event listener needed for copy buttons that are dynamically generated.
+	//(ie. most every copy button in the noter) 
+	document.querySelector('body').addEventListener('click', function(event) {
+		for (var i = 0; i < copyClass.length; i++) {
+			copyClass[i].addEventListener('click', copyFunction, false);
+		}
+	 })
+	</script>
+	</body>
+</html>

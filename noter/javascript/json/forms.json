@@ -1,0 +1,550 @@
+/**
+	 * @Name: Forms.json
+	 * @Description: Datasource for NewForm objects defined by NewForm.class.js
+	 *               Called in buttons.json using Newform.buildForm(\"myForm\")
+	 * @Parameters: name - the named used to form part of the id for the bootstrab tab + _tabNo based on the order
+	 *                     in which the tab was created 
+	 * 				variables - array of form elements defined in formVariables.js
+	 * 				functionName- The javascript button called when the submit button is pushed on the form
+	 * 			    displayName - name displayed on the tab
+	 *              colTotal - max number of form elements (variables) per row
+	 * @Author:  Jacob Conner
+	 */
+var formList = [{
+		"name": "portIncorrectForm",
+		"variables": ["frmWtn"],
+		"functionName": "portIncorrect",
+		"displayName": "Incorrect Port Info",
+		"colTotal": "1"
+	},
+	{
+		"name": "workloadJepForm",
+		"variables": ["frmDueDate"],
+		"functionName": "workloadJep",
+		"displayName": "Workload Jeopardy",
+		"colTotal": "1"
+	},
+	{
+		"name": "rescheduleWorkloadForm",
+		"variables": ["frmDueDate"],
+		"functionName": "rescheduleWorkload",
+		"displayName": "Workload Jeopardy",
+		"colTotal": "1"
+	},
+	{
+		"name": "tpvNoteForm",
+		"variables": ["frmWtn"],
+		"functionName": "tpvNote",
+		"displayName": "Incomplete TPV",
+		"colTotal": "1"
+	},
+	{
+		"name": "tpvCancelForm",
+		"variables": ["frmWtn"],
+		"functionName": "tpvCancel",
+		"displayName": "Order Cancelled Due to TPV",
+		"colTotal": "1"
+	},
+	{
+		"name": "followupForm",
+		"variables": ["frmDueDate",
+			"frmProvider"
+		],
+		"functionName": "followup",
+		"displayName": "Follow Up Needed",
+		"colTotal": "1"
+	},
+	{
+		"name": "pendingOrderForm",
+		"variables": ["frmDueDate"],
+		"functionName": "pendingOrder",
+		"displayName": "Pending Order",
+		"colTotal": "1"
+	},
+	{
+		"name": "bbProjectForm",
+		"variables": ["frmDueDate",
+			"frmPon",
+			"frmLsrId"
+		],
+		"functionName": "bbProject",
+		"displayName": "BB Project",
+		"colTotal": "1"
+	},
+	{
+		"name": "technologyChangeForm",
+		"variables": ["frmOrderStatus",
+			"frmPon",
+			"frmLsrId",
+			"frmAddress",
+			"frmDueDate",
+			"frmMaxTech",
+			"frmInstallType",
+			"frmOrderID",
+			"frmWtn"
+		],
+		"functionName": "technologyChange",
+		"displayName": "Technology Change",
+		"colTotal": "2"
+	},
+	{
+		"name": "changePhoneNoForm",
+		"variables": ["frmOrderStatus",
+			"frmPon",
+			"frmLsrId",
+			"frmDueDate",
+			"frmOrderID",
+			"frmWtn"
+		],
+		"functionName": "changePhoneNo",
+		"displayName": "Change Phone No",
+		"colTotal": "2"
+	},
+	{
+		"name": "speedChangeForm",
+		"variables": ["frmOrderStatus",
+			"frmPon",
+			"frmLsrId",
+			"frmAddress",
+			"frmDueDate",
+			"frmMaxSpeed",
+			"frmInstallType",
+			"frmOrderID",
+			"frmWtn"
+		],
+		"functionName": "speedChange",
+		"displayName": "DSL Speed Change",
+		"colTotal": "2"
+	},
+	{
+		"name": "addPhoneForm",
+		"variables": ["frmOrderStatus",
+			"frmPon",
+			"frmLsrId",
+			"frmAddress",
+			"frmDueDate",
+			"frmMaxSpeed",
+			"frmInstallType",
+			"frmOrderID",
+			"frmWtn"
+		],
+		"functionName": "addPhone",
+		"displayName": "Add Phone to DSL",
+		"colTotal": "2"
+	},
+	{
+		"name": "dropPhoneForm",
+		"variables": ["frmOrderStatus",
+			"frmPon",
+			"frmLsrId",
+			"frmAddress",
+			"frmDueDate",
+			"frmMaxSpeed",
+			"frmInstallType",
+			"frmOrderID",
+			"frmWtn"
+		],
+		"functionName": "dropPhone",
+		"displayName": "Drop Phone Keep Dsl",
+		"colTotal": "2"
+	},
+	{
+		"name": "disconnectForm",
+		"variables": ["frmOrderStatus",
+			"frmPon",
+			"frmLsrId",
+			"frmAddress",
+			"frmOrderID",
+			"frmWtn",
+			"frmDueDate"
+		],
+		"functionName": "disconnect",
+		"displayName": "Disconnect",
+		"colTotal": "1"
+	},
+	{
+		"name": "moverForm",
+		"variables": ["frmOrderStatus",
+			"frmPon",
+			"frmLsrId",
+			"frmAddress",
+			"frmDueDate",
+			"frmMaxSpeed",
+			"frmMaxTech",
+			"frmInstallType",
+			"frmOrderID",
+			"frmWtn"
+		],
+		"functionName": "mover",
+		"displayName": "Mover",
+		"colTotal": "2"
+	},
+	{
+		"name": "newConnectForm",
+		"variables": ["frmOrderStatus",
+			"frmPon",
+			"frmLsrId",
+			"frmAddress",
+			"frmDueDate",
+			"frmMaxSpeed",
+			"frmMaxTech",
+			"frmInstallType",
+			"frmOrderID",
+			"frmWtn"
+		],
+		"functionName": "newConnect",
+		"displayName": "New Connect",
+		"colTotal": "2"
+	},
+	{
+		"name": "bbProjectForm",
+		"variables": ["frmDueDate",
+			"frmPon",
+			"frmLsrId"
+		],
+		"functionName": "bbProject",
+		"displayName": "BB Project",
+		"colTotal": "1"
+	},
+	{
+		"name": "hughesConfirmForm",
+		"variables": ["frmSan",
+			"frmFso",
+			"frmDueDate"
+		],
+		"functionName": "hughesConfirm",
+		"displayName": "Hughes Confirm",
+		"colTotal": "1"
+	},
+	{
+		"name": "splitGen5Form",
+		"variables": ["frmTime",
+			"frmDueDate"
+		],
+		"functionName": "splitGen5",
+		"displayName": "Split Gen 5",
+		"colTotal": "1"
+	},
+	{
+		"name": "poleMountForm",
+		"variables": ["frmTime",
+			"frmDueDate"
+		],
+		"functionName": "poleMount",
+		"displayName": "Add a pole mount",
+		"colTotal": "1"
+	},
+	{
+		"name": "gen5TechForm",
+		"variables": ["frmTime",
+			"frmDueDate"
+		],
+		"functionName": "gen5Tech",
+		"displayName": "Build Gen 5 Order",
+		"colTotal": "1"
+	},
+	{
+		"name": "addAccountForm",
+		"variables": ["frmSan",
+			"frmModemKey",
+			"frmCustCode"
+		],
+		"functionName": "addAccount",
+		"displayName": "Add Viasat Account",
+		"colTotal": "1"
+	},
+	{
+		"name": "tofNoteForm",
+		"variables": ["frmRequestType", 
+			"frmBlank",
+			"frmOldAcctHldr",
+			"frmNewAcctHldr",
+			"frmOldAcctNo",
+			"frmNewAcctNo",
+			 "receivers6"
+		],
+		"functionName": "tofNote",
+		"displayName": "Transfer of Ownership",
+		"colTotal": "2"
+	},
+	{
+		"name": "waiveCommitmentForm",
+		"variables": ["frmNoMonths"],
+		"functionName": "waiveCommitment",
+		"displayName": "Waive Commitment",
+		"colTotal": "1"
+	},
+	{
+		"name": "ureNoteForm",
+		"variables": ["receivers1"
+		],
+		"functionName": "ureNote",
+		"displayName": "Waive URE Fee",
+		"colTotal": "1"
+	},
+	{
+		"name": "etfForm",
+		"variables": ["frmFee"],
+		"functionName": "etf",
+		"displayName": "Credit ETF",
+		"colTotal": "1"
+	},
+	{
+		"name": "returnForCreditForm",
+		"variables": ["frmAccountNo", 
+					  "frmCustomer",
+					  "frmAddress",
+					  "frmPhoneNo",
+					  "frmProduct",],
+		"functionName": "returnForCredit",
+		"displayName": "Return For Credit Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "returnForExchangeForm",
+		"variables": ["frmAccountNo", 
+					  "frmCustomer",
+					  "frmAddress",
+					  "frmPhoneNo",
+					  "frmProduct",],
+		"functionName": "returnForExchange",
+		"displayName": "Return For Exchange Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "remoteReturnedToSenderForm",
+		"variables": ["frmAccountNo", 
+					  "frmCustomer",
+					  "frmAddress",
+					  "frmPhoneNo",],
+		"functionName": "remoteReturnedToSender",
+		"displayName": "54.0 Remote Returned to Sender",
+		"colTotal": "1"
+	},
+	{
+		"name": "noRMAForm",
+		"variables": ["frmAccountNo", 
+					  "frmReturnOrder",
+					  "frmProduct",
+					  "frmCustomer",
+					  "frmAddress"],
+		"functionName": "noRMA",
+		"displayName": "No RMA Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "viasatEmailForm",
+		"variables": ["frmUsername"],
+		"functionName": "viasatEmail",
+		"displayName": "Reset ESVT Password",
+		"colTotal": "1"
+	},
+	{
+		"name": "viasatEmailFormAgent",
+		"variables": ["frmUsername",
+					  "frmPassword"],
+		"functionName": "viasatEmailAgent",
+		"displayName": "ESVT New Password Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "wliEmailForm",
+		"variables": ["frmCustomer"],
+		"functionName": "wliEmail",
+		"displayName": "Working Left In Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "likeForNonLikeEmailForm",
+		"variables": ["frmCustomer",
+					  "frmAccountNo",
+					  "frmPhoneNo",
+					  "frmEmail", 
+					  "frmAddress",
+					  "receiversl4l"],
+		"functionName": "likeForNonLikeEmail",
+		"displayName": "Like for Non-Like Email",
+		"colTotal": "2"
+	},
+	{
+		"name": "neacEmailForm",
+		"variables": ["frmCustomer",
+					  "frmAddress",
+					  "frmPon",
+					  "frmDueDate"],
+		"functionName": "neacEmail",
+		"displayName": "NEAC Email",
+		"colTotal": "2"
+	},
+	{
+		"name": "bbProjectEmailForm",
+		"variables": ["frmCustomer",
+					  "frmAddress",
+					  "frmPon",
+					  "frmLsrId",
+					  "frmDueDate"],
+		"functionName": "bbProjectEmail",
+		"displayName": "BB Project Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "RAFConfirmReceiptForm",
+		"variables": ["frmRetailer",
+					  "frmShippedDate",
+					  "frmCustomer",
+					  "frmAccountNo",
+					  "frmAddress",
+					  "frmWorkOrderNo"],
+		"functionName": "RAFConfirmReceipt",
+		"displayName": "RAF Confirm Receipt Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "RAFNewTVRequestForm",
+		"variables": ["frmRetailer",
+					  "frmShippedDate",
+					  "frmCustomer",
+					  "frmAccountNo",
+					  "frmAddress",
+					  "frmWorkOrderNo"],
+		"functionName": "RAFNewTVRequest",
+		"displayName": "RAF New TV Request Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "RAFNotInMasterListForm",
+		"variables": ["frmCustomer",
+					  "frmAccountNo",
+					  "frmAddress",
+					  "frmWorkOrderNo"],
+		"functionName": "RAFNotInMasterList",
+		"displayName": "RAF Not in Master List Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "amdocsBusinessCareForm",
+		"variables": ["frmCustomerId",
+					  "frmEmail", 
+					  "frmAccountNo"],
+		"functionName": "amdocsBusinessCare",
+		"displayName": "Unable to Create Amdocs Business Care Account",
+		"colTotal": "1"
+	},
+	{
+		"name": "RAFOrderCancelledForm",
+		"variables": ["frmWorkOrderNo",
+					  "frmCustomer",
+					  "frmAccountNo",
+					  "frmAddress",
+					  "frmNewWorkOrderNo"],
+		"functionName": "RAFOrderCancelled",
+		"displayName": "RAF Order Cancelled Email",
+		"colTotal": "1"
+	},
+	{
+		"name": "spidEmailForm",
+		"variables": ["frmErrorMessage",
+					  "frmIssueDescription",
+					  "frmApplication",
+					  "frmStepsToRecreate",
+					  "frmExpectedResult",
+					  "frmImpact",
+					  "frmExampleAccounts",
+					  "frmScreenshot"],
+		"functionName": "spidEmail",
+		"displayName": "SPID Email",
+		"colTotal": "2"
+	},
+	{
+		"name": "uatEmailForm",
+		"variables": ["frmApplication",
+					  "frmIssueDescription",
+					  "frmStepsToRecreate",
+					  "frmExpectedResult",
+					  "frmWorkAround"],
+		"functionName": "uatEmail",
+		"displayName": "UAT Work Around Email",
+		"colTotal": "2"
+	},
+	{
+		"name": "cboDefectEmailForm",
+		"variables": ["frmIssueDescription",
+					  "frmStepsToRecreate",
+					  "frmExpectedResult",
+					  "frmCBOImpact",
+					  "frmWorkAround"],
+		"functionName": "cboDefectEmail",
+		"displayName": "CBO Defect Email",
+		"colTotal": "2"
+	},
+	{
+		"name": "removeWhiteSpaceForm",
+		"variables": ["frmNoSpace"],
+		"functionName": "removeWhiteSpace",
+		"displayName": "Remove White Space",
+		"colTotal": "1"
+	},
+	{
+		"name": "ertQueryForm",
+		"variables": ["frmTextArea"],
+		"functionName": "ERTNoteMaker",
+		"displayName": "ERT Formatter",
+		"colTotal": "1"
+	},
+	{
+		"name": "idVerificationForm",
+		"variables": ["frmVerificationQuestions"],
+		"functionName": "idVerificationNote",
+		"displayName": "ID Verification Questions",
+		"colTotal": "1"
+	},
+	{
+		"name": "creditQualForm",
+		"variables": ["frmCustomer"],
+		"functionName": "creditqual",
+		"displayName": "Credit Qualification",
+		"colTotal": "1"
+	},
+	{
+		"name": "notDisabled24HoursForm",
+		"variables": ["FrmfollowUpReason", "frmDueDate", "receivers6"],
+		"functionName": "notDisabled24",
+		"displayName": "Not Disabled 24 Hours",
+		"colTotal": "1"
+	},
+	{
+		"name": "removeLastPaymentForm",
+		"variables": ["frmLastPayment"],
+		"functionName": "removeLastPayment",
+		"displayName": "Remove Last Payment",
+		"colTotal": "1"
+	},
+	{
+		"name": "sendBillForm",
+		"variables": ["frmDocRequestType", "frmDocumentType", "frmServicePeriod"],
+		"functionName": "sendBill",
+		"displayName": "Send A Bill",
+		"colTotal": "1"
+	},
+	{
+		"name": "sevenPlusForm",
+		"variables": ["receivers7"],
+		"functionName": "sevenPlus",
+		"displayName": "7+ Receivers",
+		"colTotal": "1"
+	},
+	{
+		"name": "buttonBuilderForm",
+		"variables": ["frmBtnGroupName"],
+		"functionName": "buttonBuilder",
+		"displayName": "Button Builder",
+		"colTotal": "1"
+	},
+	{
+		"name": "cssBuilderForm",
+		"variables": ["frmColorPicker"],
+		"functionName": "cssBuilder",
+		"displayName": "CSS Builder",
+		"colTotal": "1"
+	}
+];

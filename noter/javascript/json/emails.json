@@ -1,0 +1,14 @@
+var emailList = [
+	{
+		"name": "helloEmailForm",
+		"variables": [
+			"frmRecipienetName",
+			"frmSenderName",
+		],
+		"functionName": "helloEmail",
+		"displayName": "Greeting Email",
+		"colTotal": "1",
+		"preview":true,
+		"subject": "Greetings"
+	}
+];

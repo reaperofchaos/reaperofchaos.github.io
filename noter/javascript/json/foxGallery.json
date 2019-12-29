@@ -1,0 +1,47 @@
+var foxes = {
+	"imageList": [{
+			"name": "Arctic fox",
+			"src": "images/foxes/pexels-photo-208976.jpeg",
+			"height": "150",
+			"width": "150"
+		},
+		{
+			"name": "Red fox",
+			"src": "images/foxes/pexels-photo-247399.jpeg",
+			"height": "150",
+			"width": "150"
+		},
+		{
+			"name": "Red fox 2",
+			"src": "images/foxes/pexels-photo-1301172.jpeg",
+			"height": "150",
+			"width": "150"
+		},
+		{
+			"name": "Black fox",
+			"src": "images/foxes/photo-1547888413-5c8a8871d4bd.webp",
+			"height": "150",
+			"width": "150"
+		},
+		{
+			"name": "Arctic fox 2",
+			"src": "images/foxes/photo-1475698333997-927ba0aac3a1.webp",
+			"height": "150",
+			"width": "150"
+		},
+		{
+			"name": "Arctic fox 3",
+			"src": "images/foxes/photo-1484846274419-e64ecb2042b3.webp",
+			"height": "150",
+			"width": "150"
+		},
+		{
+			"name": "Fennec fox",
+			"src": "images/foxes/photo-1569247625012-49e746e882e1.webp",
+			"height": "150",
+			"width": "150"
+		}
+	],
+	"cols": 3,
+	"id": "foxGallery"
+};
