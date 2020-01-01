@@ -1,0 +1,27 @@
+#selectors, #reviewList {
+	background-color: orange;
+	border-style: solid; 
+	border-width: 3px; 
+}
+
+#question {
+	background-color: #bbe59e;
+	border-style: solid; 
+	border-width: 3px;
+	padding: 10px; 
+}
+li {
+	background-color: lightGray;
+	border-style: solid; 
+	border-width: 3px; 
+}
+#scoreBoard {
+	background-color: lightGray;
+	border-style: solid; 
+	border-width: 3px; 
+}
+#currentScore {
+	background-color: lightblue;
+	border-style: solid; 
+	border-width: 3px; 
+	}

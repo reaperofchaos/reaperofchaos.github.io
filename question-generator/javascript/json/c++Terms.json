@@ -1,0 +1,932 @@
+var keyTerms = 	[{	"Term":"Algorithm",
+		"Definition":"the set of step-by-step instructions that accomplish a task",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Assembler",
+		"Definition":"a program that converts assembly instructions into machine code",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Assembly languages",
+		"Definition":"programming languages that use mnemonics, such as ADD",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Coding",
+		"Definition":"the process of translating a solution into a language that the computer can understand",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Compiler",
+		"Definition":"a program that converts high-level instructions into a language that the computer can understand; unlike an interpreter, a compiler converts all of a program’s instructions before running the program",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Computer programs",
+		"Definition":"the directions given to computers; also called programs",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Control structures",
+		"Definition":"the structures that control the flow of a program’s logic; also called logic structures; sequence, selection, and repetition",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Decision structure",
+		"Definition":"another term for the selection structure",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"High-level languages",
+		"Definition":"programming languages whose instructions more closely resemble the English language",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Interpreter",
+		"Definition":"a program that converts high-level instructions into a language that the computer can understand; unlike a compiler, an interpreter converts a program’s instructions, line by line, as the program is running",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Iteration",
+		"Definition":"another term for the repetition structure",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Logic structures",
+		"Definition":"another term for control structures",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Loop",
+		"Definition":"another term for the repetition structure",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Machine code",
+		"Definition":"another term for machine language",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Machine language",
+		"Definition":"computer instructions written in 0s and 1s; also called machine code",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Mnemonics",
+		"Definition":"the alphabetic abbreviations used to represent instructions in assembly languages",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Object-oriented program",
+		"Definition":"a program designed by focusing on the objects that the program could use to accomplish its goal",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Procedure-oriented program",
+		"Definition":"a program designed by focusing on the individual tasks to be performed ",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Programmers",
+		"Definition":"the people who write computer programs ",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Programming",
+		"Definition":"giving a mechanism the directions to accomplish a task",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Programming languages",
+		"Definition":"languages used to communicate with a computer",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Programs",
+		"Definition":"the directions given to computers; also called computer programs",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Repetition structure",
+		"Definition":"the control structure that directs the computer to repeat one or more instructions until some condition is met, at which time the computer should stop repeating the instructions; also called a loop or iteration",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Selection structure",
+		"Definition":"the control structure that directs the computer to make a decision and then take the appropriate action based on that decision; also called the decision structure",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Sequence structure",
+		"Definition":"the control structure that directs the computer to process each instruction in the order listed in the program",
+		"Group":"Chapter 1"
+	},
+	{	"Term":"Desk-checking",
+		"Definition":"the process of manually walking through each of the instructions in an algorithm; also called hand-tracing",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Flowchart",
+		"Definition":"a tool that programmers use to help them plan (or depict) an algorithm; consists of standardized symbols connected by flowlines",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Flowlines",
+		"Definition":"the lines that connect the symbols in a flowchart",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Hand-tracing",
+		"Definition":"another term for desk-checking",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Input",
+		"Definition":"the items a program needs in order to achieve the output",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Input/Output symbol",
+		"Definition":"the parallelogram in a flowchart; used to represent input and output tasks",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Invalid data",
+		"Definition":"data that the algorithm is not expecting the user to enter",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"IPO",
+		"Definition":"an acronym for input, processing, and output",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"IPO chart",
+		"Definition":"a chart that some programmers use to organize and summarize the results of a problem analysis",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Output",
+		"Definition":"the goal of solving a problem; the items the user wants to display, print, or store",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Process symbol",
+		"Definition":"the rectangle symbol in a flowchart; used to represent tasks such as calculations",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Processing item",
+		"Definition":"an intermediate value (neither input nor output) that an algorithm uses when processing the input into the output",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Pseudocode",
+		"Definition":"a tool that programmers use to help them plan an algorithm; consists of short English statements; means false code",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Start/Stop symbol",
+		"Definition":"the oval symbol in a flowchart; used to mark the beginning and end of the flowchart",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"Valid data",
+		"Definition":"data that the algorithm is expecting the user to enter",
+		"Group":"Chapter 2"
+	},
+	{	"Term":"ASCII",
+		"Definition":"a coding scheme used to represent character data; stands for American Standard Code for Information Interchange",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Binary number system",
+		"Definition":"a system that uses only the two digits 0 and 1; used to represent numeric data in the computer’s internal memory",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Camel case",
+		"Definition":"a naming convention that capitalizes only the first letter in the second and subsequent words in a memory location’s name",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Character",
+		"Definition":"a letter, a symbol, or a number that will not be used in a calculation",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Character literal constant",
+		"Definition":"one character enclosed in single quotation marks",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Decimal number system",
+		"Definition":"a system that represents numbers using the digits 0 through 9",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Demoted",
+		"Definition":"refers to the conversion of a number from one data type to another data type that can store only smaller numbers",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Empty string",
+		"Definition":"two quotation marks with no space between, like this “”",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Fundamental data types",
+		"Definition":"the basic data types built into the C++ language; also called primitive data types or built-in data types",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Implicit type conversion",
+		"Definition":"the process the computer follows when converting a numeric value to fit a memory location that has a different data type",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Initializing",
+		"Definition":"assigning a beginning value to a memory location",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Integer",
+		"Definition":"a whole number, which is a number without a decimal place",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Keyword",
+		"Definition":"a word that has a special meaning in the programming language you are using",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Literal constant",
+		"Definition":"an item of data that can appear in a program instruction and be stored in a memory location",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Named constant",
+		"Definition":"a memory location whose value cannot be changed while a program is running",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Numeric literal constants",
+		"Definition":"numbers",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Promoted",
+		"Definition":"refers to the conversion of a number from one data type to another data type that can store larger numbers",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Real numbers",
+		"Definition":"numbers that contain a decimal place",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Runtime",
+		"Definition":"occurs while a program is running",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Statement",
+		"Definition":"a C++ instruction that causes the computer to perform some action after being executed (processed) by the computer; all statements in C++ must end with a semicolon",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"String literal constant",
+		"Definition":"zero or more characters enclosed in double quotation marks",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Syntax",
+		"Definition":"the rules you need to follow when using a programming language; every programming language has its own syntax",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Text",
+		"Definition":"a group of characters treated as one unit and not used in a calculation",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"User-defined data type",
+		"Definition":"a data type added to the C++ language through the use of a class; an example is the string data type",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"Variable",
+		"Definition":"a memory location whose value can change (vary) while a program is running",
+		"Group":"Chapter 3"
+	},
+	{	"Term":"#include directive",
+		"Definition":"an instruction that tells the computer to merge the source code from one file with the source code from another file",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"%",
+		"Definition":"modulus operator; divides two integers and returns the remainder as an integer",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"<<",
+		"Definition":"the insertion operator in C++",
+		"Group":"Chapter 4"
+	},
+	{	"Term":">>",
+		"Definition":"the extraction operator in C++",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Arithmetic assignment operators",
+		"Definition":"operators comprised of an arithmetic operator and the assignment operator; allow you to abbreviate an assignment statement that follows a specific format",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Assignment operator",
+		"Definition":"the = symbol in an assignment statement",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Assignment statement",
+		"Definition":"used to assign a value to a variable during runtime",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Bugs",
+		"Definition":"the errors in a program",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"cin",
+		"Definition":"the standard input stream object in C++; tells the computer to pause program execution while the user enters one or more characters at the keyboard; temporarily stores the characters entered at the keyboard",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Comment",
+		"Definition":"a message used to document a program internally; begins with two forward slashes (//) in C++",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"cout",
+		"Definition":"the standard output stream object in C++; used with the insertion operator to display information on the computer screen",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Debugging",
+		"Definition":"the process of locating and correcting any errors in a program",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"endl",
+		"Definition":"a stream manipulator that can be used to advance the cursor to the next line on the computer screen",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Executable file",
+		"Definition":"a file that contains all of the machine code necessary to run a program; executable files have an .exe filename extension",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Explicit type conversion",
+		"Definition":"the explicit conversion of data from one data type to another; usually performed with the static_cast operator; also called a type cast",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Extraction operator",
+		"Definition":"two greater-than signs (>>); extracts (removes) characters from the cin object and sends them “in” to the computer’s internal memory",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Function",
+		"Definition":"a block of code that performs a task",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Function body",
+		"Definition":"the code contained between a function’s opening and closing braces",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Function header",
+		"Definition":"the first line in a function; marks the beginning of the function",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"IDE",
+		"Definition":"an acronym for Integrated Development Environment",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Insertion operator",
+		"Definition":"two less-than signs (<<); used with the cout object to display information on the computer screen",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Integrated Development Environment",
+		"Definition":"a system that includes both an editor and a compiler",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Linker",
+		"Definition":"a program that combines the code contained in a C++ program’s object file with other machine code necessary to run the C++ program",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Logic error",
+		"Definition":"an error (bug) that occurs when you neglect to enter a program instruction or when you enter instructions in the wrong order; also occurs as a result of calculation statements that are correct syntactically but incorrect mathematically",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Modulus operator",
+		"Definition":"the percent sign (%); divides two integers and returns the remainder as an integer",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Object code",
+		"Definition":"another name for machine code",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Object file",
+		"Definition":"a file that contains the object code associated with a program; automatically generated by the compiler",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Prompt",
+		"Definition":"a message (displayed on the computer screen) indicating the type of data the user should enter at the keyboard",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Source code",
+		"Definition":"the program instructions you enter using an editor; the instructions are saved in a source file",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Source file",
+		"Definition":"a file that contains a program’s source code; source files have a .cpp filename extension",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"static_cast operator",
+		"Definition":"explicitly converts (or type casts) data from one data type to another",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Stream",
+		"Definition":"a sequence of characters",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Stream manipulator",
+		"Definition":"allows a C++ program to manipulate (or manage) the characters in either the input or output stream",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Stream objects",
+		"Definition":"objects used to perform standard input and output operations in C++",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Syntax error",
+		"Definition":"an error (bug) that occurs when a program instruction violates a programming language’s syntax",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Testing",
+		"Definition":"running (executing) a program, along with sample data, on the computer",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Type cast",
+		"Definition":"another term for an explicit type conversion",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"using directive",
+		"Definition":"an instruction that tells the computer where it can find the definitions of keywords and classes",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"White-space character",
+		"Definition":"a newline character, a tab character, or a blank (space) character",
+		"Group":"Chapter 4"
+	},
+	{	"Term":"Argument",
+		"Definition":"an item that appears between the parentheses that follow a function’s name; represents information that the function needs to perform its task",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Boolean operators",
+		"Definition":"another term for logical operators",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Comparison operators",
+		"Definition":"operators used to compare values having the same data type in an expression; also called relational operators; <, <=, >, >=, ==, !=",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Data validation",
+		"Definition":"the process of verifying that a program’s input data is within the expected range",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Decision symbol",
+		"Definition":"the diamond in a flowchart; used to represent the condition in either a selection or repetition structure",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Dual-alternative selection structures",
+		"Definition":"selection structures that contain instructions in both their true and false paths",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"False path",
+		"Definition":"contains the instructions to be processed when a dual-alternative selection structure’s condition evaluates to false",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"fixed stream manipulator",
+		"Definition":"the manipulator used to display real numbers in fixed-point notation",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Local variable",
+		"Definition":"a variable declared within a statement block; can be used only by the instructions within the statement block in which it is declared, and the instructions must appear after the declaration statement",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Logical operators",
+		"Definition":"operators used to combine two or more sub-conditions into one compound condition; also called Boolean operators",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"scientific stream manipulator",
+		"Definition":"the manipulator used to display real numbers in scientific (e) notation",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Selection structure",
+		"Definition":"one of the three control structures; tells the computer to make a decision before selecting the next instruction to process; also called the decision structure",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"setprecision stream manipulator",
+		"Definition":"the manipulator used to control the number of decimal places that appear when a real number is displayed",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Short-circuit evaluation",
+		"Definition":"refers to the way the computer evaluates two sub-conditions connected by a logical operator; when the logical operator is And, the computer does not evaluate sub-condition2 when sub-condition1 is false; when the logical operator is Or, the computer does not evaluate sub-condition2 when sub-condition1 is true",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Single-alternative selection structure",
+		"Definition":"a selection structure that requires a special action to be taken only when the structure’s condition is true",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Statement block",
+		"Definition":"one or more instructions enclosed in a set of braces ({})",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"tolower function",
+		"Definition":"temporarily converts a character to lowercase",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"toupper function",
+		"Definition":"temporarily converts a character to uppercase",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"True path",
+		"Definition":"contains the instructions to be processed when a selection structure’s condition evaluates to true",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"Truth tables",
+		"Definition":"tables that summarize how the computer evaluates the logical operators in an expression",
+		"Group":"Chapter 5"
+	},
+	{	"Term":"break statement",
+		"Definition":"a C++ statement used to tell the computer to leave a switch statement",
+		"Group":"Chapter 6"
+	},
+	{	"Term":"Extended selection structures",
+		"Definition":"another name for multiple-alternative selection structures",
+		"Group":"Chapter 6"
+	},
+	{	"Term":"Multiple-alternative selection structures",
+		"Definition":"selection structures that contain several alternatives; also called extended selection structures; can be coded using either the multiple-alternative form of the if statement or the switch statement",
+		"Group":"Chapter 6"
+	},
+	{	"Term":"Nested selection structure",
+		"Definition":"a selection structure that is wholly contained (nested) within another selection structure",
+		"Group":"Chapter 6"
+	},
+	{	"Term":"switch statement",
+		"Definition":"a C++ statement that can be used to code a multiple-alternative selection structure",
+		"Group":"Chapter 6"
+	},
+	{	"Term":"Accumulator",
+		"Definition":"a numeric variable used for accumulating (adding together) something",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Counter",
+		"Definition":"a numeric variable used for counting something",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Counter-controlled loops",
+		"Definition":"loops whose processing and termination are controlled by a counter variable",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Endless loop",
+		"Definition":"a loop whose instructions are processed indefinitely; also called an infinite loop",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Incrementing",
+		"Definition":"another name for updating",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Infinite loop",
+		"Definition":"another name for an endless loop",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Initializing",
+		"Definition":"the process of assigning a beginning value to a memory location, such as a counter or accumulator variable",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Loop",
+		"Definition":"another name for the repetition structure",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Loop body",
+		"Definition":"the instructions within a loop",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Loop exit condition",
+		"Definition":"the requirement that must be met for the computer to stop processing the loop body instructions",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Looping condition",
+		"Definition":"the requirement that must be met for the computer to continue processing the loop body instructions",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Posttest loop",
+		"Definition":" a loop whose condition is evaluated after the instructions in its loop body are processed",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Pretest loop",
+		"Definition":"a loop whose condition is evaluated before the instructions in its loop body are processed",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Priming read",
+		"Definition":"the input instruction that appears above a loop; used to get the first input item from the user",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Repetition structure",
+		"Definition":"the control structure used to repeatedly process one or more program instructions; also called a loop",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Sentinel values",
+		"Definition":"values that are used to end loops; also called trip values or trailer values",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Update read",
+		"Definition":"the input instruction that appears within a loop and is associated with the priming read",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"Updating",
+		"Definition":"the process of adding a number to the value stored in a counter or accumulator variable; also called incrementing",
+		"Group":"Chapter 7"
+	},
+	{	"Term":"do while statement",
+		"Definition":"the statement used to code a posttest loop in C++",
+		"Group":"Chapter 8"
+	},
+	{	"Term":"Nested loop",
+		"Definition":"a loop (repetition structure) contained entirely within another loop (repetition structure)",
+		"Group":"Chapter 8"
+	},
+	{	"Term":"Actual argument",
+		"Definition":"an item of information passed (sent) to a function when the function is called (invoked)",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Built-in functions",
+		"Definition":"blocks of code that perform a task and are included in libraries that come with the C++ language; examples include the pow, sqrt, rand, srand, and time functions",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Exponentiation",
+		"Definition":"the process of raising a number to a power",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Formal parameters",
+		"Definition":"the memory locations listed in a function header’s parameterList; a formal parameter stores an item of information passed to a function when the function is invoked (called)",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Function prototype",
+		"Definition":"a statement that specifies the function’s name, the data type of its return value (if any), and the data type and (optionally) name of each of its formal parameters (if any); required for every function that is defined below the main function in a program",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Global variables",
+		"Definition":"variables that are declared outside of any function in a program; global variables can be used by any statement below the variable declaration in the program, and they remain in memory until the program ends; you should avoid using global variables in a program",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Lifetime",
+		"Definition":"indicates how long an item, such as a variable, remains in the computer’s internal memory",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Local variables",
+		"Definition":"variables that are either declared within a function or appear in the function header’s parameterList; local variables can be used only by the function in which they are declared or in whose parameterList they appear; local variables remain in memory until the function ends",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Passing by reference",
+		"Definition":"refers to the process of passing a variable’s address to a function",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Passing by value",
+		"Definition":"refers to the process of passing a variable’s value to a function",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"pow function",
+		"Definition":"a built-in C++ function that raises a number to a power and then returns the result as a double number",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Program-defined functions",
+		"Definition":"blocks of code that perform a task and are written by a programmer; usually the task will avoid the duplication of code within a program or perform some common task",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Pseudo-random number generator",
+		"Definition":"a device that produces a sequence of numbers that meet certain statistical requirements for randomness; the rand function is the pseudo-random number generator in C++",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"rand function",
+		"Definition":"a built-in C++ function that returns a random integer that is greater than or equal to zero but less than or equal to the value stored in the RAND_MAX constant; the pseudo-random number generator in C++",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"RAND_MAX",
+		"Definition":"a C++ built-in constant that represents the largest integer generated by the rand function; although the value of RAND_MAX varies with different computer systems, its value is always at least 32767",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"return statement",
+		"Definition":"in most cases, the last statement in a value-returning function; it alerts the computer that the function has completed its task",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Scope",
+		"Definition":"indicates where in the program an item, such as a variable, can be used",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"sqrt function",
+		"Definition":"a C++ built-in function whose purpose is to return the square root of a number that has either the double or float data type; returns the square root as a double number; a program that uses the sqrt function must contain the #include <cmath> directive",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"srand function",
+		"Definition":"a C++ built-in function used to initialize the rand function",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"time function",
+		"Definition":"a built-in C++ function that returns the current time (according to your computer system’s clock) as seconds elapsed since midnight on January 1, 1970; often used as the seed argument in the srand function; a program that uses the time function must contain the #include <ctime> directive",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"Value-returning functions",
+		"Definition":"functions that return precisely one value after they complete their assigned task",
+		"Group":"Chapter 9"
+	},
+	{	"Term":"&",
+		"Definition":"the address-of operator",
+		"Group":"Chapter 10"
+	},
+	{	"Term":"Address-of operator",
+		"Definition":"the ampersand; tells the computer to pass a variable’s address in memory rather than its contents",
+		"Group":"Chapter 10"
+	},
+	{	"Term":"Passing by reference",
+		"Definition":"refers to the process of passing a variable’s address to a function",
+		"Group":"Chapter 10"
+	},
+	{	"Term":"Void functions",
+		"Definition":"functions that do not return a value after completing their assigned task",
+		"Group":"Chapter 10"
+	},
+	{	"Term":"Array",
+		"Definition":"a group of related variables that have the same name and data type",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Bubble sort",
+		"Definition":"one of many sorting algorithms used to sort small arrays; works by comparing adjacent array elements and swapping the ones that are out of order",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Elements",
+		"Definition":"the variables in an array",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"One-dimensional array",
+		"Definition":"an array whose elements are identified by a unique subscript",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Parallel arrays",
+		"Definition":"two or more arrays whose elements are related by their corresponding position (subscript) in the arrays",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Populating the array",
+		"Definition":"refers to the process of initializing the elements in an array",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Scalar variable",
+		"Definition":"another term for a simple variable",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Simple variable",
+		"Definition":"a variable that is unrelated to any other variable in the computer’s internal memory; also called a scalar variable",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Sorting",
+		"Definition":"the process of arranging data in a specific order",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Subscript",
+		"Definition":"a unique number that identifies the position of an element in an array",
+		"Group":"Chapter 11"
+	},
+	{	"Term":"Two-dimensional array",
+		"Definition":"an array made up of rows and columns; each element has the same data type and is identified by a unique combination of two subscripts: a row subscript and a column subscript",
+		"Group":"Chapter 12"
+	},
+		{	"Term":"assign function",
+		"Definition":"used to duplicate one character a specified number of times within a string",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"Concatenation operator",
+		"Definition":"used to concatenate (connect) strings; the + sign in C++",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"Consuming the character",
+		"Definition":"another term for discarding the character",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"erase function",
+		"Definition":"used to remove (erase) characters from a string",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"find function",
+		"Definition":"returns an integer that indicates the beginning position of a string within a string variable",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"getline function",
+		"Definition":"reads characters entered at the keyboard until it encounters the delimiter character, which it consumes",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"ignore function",
+		"Definition":"tells the computer to first read and then consume (discard) one or more characters",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"insert function",
+		"Definition":"used to insert characters within a string",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"length function",
+		"Definition":"returns the number of characters contained in a string variable",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"replace function",
+		"Definition":"used to replace characters within a string",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"String concatenation",
+		"Definition":"the process of connecting (or linking) strings together; accomplished with the concatenation operator",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"substr function",
+		"Definition":"returns the characters you want to access from a string variable",
+		"Group":"Chapter 13"
+	},
+	{	"Term":"!",
+		"Definition":"the Not logical operator",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"close function",
+		"Definition":"closes a sequential access file in a program",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"eof function",
+		"Definition":"determines whether an entire sequential access file has been read; it returns true when the file pointer is located after the last character in a sequential access file; otherwise, it returns false",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"Field",
+		"Definition":"a single item of information about a person, place, or thing",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"Input files",
+		"Definition":"files that contain information used as input by a program",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"is_open function",
+		"Definition":"used in a program to determine whether a sequential access file was opened successfully; returns true when the open operation succeeded; otherwise, returns false",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"Not logical operator",
+		"Definition":"reverses the truth-value of a condition",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"open function",
+		"Definition":"used to open input and output files in a program",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"Output files",
+		"Definition":"files that store the output produced by a program",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"Record",
+		"Definition":"a collection of one or more related fields that contain all of the necessary data about a person, place, or thing",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"Sequential access files",
+		"Definition":"files composed of lines of text; also referred to as text files",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"Text files",
+		"Definition":"another name for sequential access files",
+		"Group":"Chapter 14"
+	},
+	{	"Term":"Abstraction",
+		"Definition":"hiding the internal details of an object from the user; protects against the user inadvertently making changes to the object",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Attribute (data)",
+		"Definition":"characteristics that describe the object (example: your car (object) has tires (attribute))",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Base Class",
+		"Definition":"Original class from which another class is created",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Behaviors",
+		"Definition":"operations or actions that the object can either perform or have performed on it (example: your car (object) can accelerate (behavior))",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Class",
+		"Definition":"a pattern or blueprint for creating an object; it contains all of the attributes and behaviors that describe the object",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Constructor",
+		"Definition":"a class method whose instructions the computer automatically processes each time an object is instantiated from the class",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Data Members",
+		"Definition":"attributes of a class",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Declaration Section",
+		"Definition":"contains the C++ class statement",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Default Constructor",
+		"Definition":"used to initialize the data members of a class upon instantiation",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Derived Class",
+		"Definition":"a class created from another class",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Encapsulation",
+		"Definition":"combining of an object’s attributes and behaviors into one package (a class)",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Exposed",
+		"Definition":"attributes that are not hidden from the user",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Header file",
+		"Definition":"a file that contains a class definition;  header filenames have an extension of .h",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Hidden",
+		"Definition":"the OOP term that refers to the attributes and behaviors that the user cannot access",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Implementation Section",
+		"Definition":"definitions of each method listed in the declaration section",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Inheritance",
+		"Definition":"refers to creating a new class (derived class) from an existing class (base class); note that the derived class inherits the attributes and behaviors from the base class",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Instance",
+		"Definition":"the object that you create from a class; note that a class is not an object, however an instance of a class is an object",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Member Methods",
+		"Definition":"behaviors of a class",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Object",
+		"Definition":"anything that can be seen or touched (example being a car); every object has attributes and behaviors",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"OOP (Object-Oriented Programming)",
+		"Definition":"a programming methodology based upon objects",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Overloading methods",
+		"Definition":"two or more class methods that share the same name, but have different parameter lists",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Parameterized constructors",
+		"Definition":"constructors that have one or more formal parameters",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Polymorphism",
+		"Definition":"allow the same instruction to be carried out differently dependent upon the object",
+		"Group":"Chapter 15"
+	},
+	{	"Term":"Signature",
+		"Definition":"the combination of a method’s name with its optional parameter list",
+		"Group":"Chapter 15"
+	}];
